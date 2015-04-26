@@ -1,0 +1,26 @@
+{
+    "name": "boxmeup/boxmep-api",
+    "description": "API for boxmeup.",
+    "license": "GPLv3",
+    "require": {
+        "php": ">=5.5",
+        "silex/silex": "~2.0@dev",
+        "symfony/config": "~2.6",
+        "symfony/monolog-bridge": "~2.6",
+        "symfony/process": "~2.6"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t web web/index.php"
+        ]
+    }
+}
